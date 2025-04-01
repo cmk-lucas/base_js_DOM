@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemple DOM</title>
+</head>
+<body>
+  <h1 id="monTitre">Coucou!</h1>
+  <p class="monParagraphe">Bienvenue sur ma page.</p>
+  <button id="monBouton">Clique ici</button>
+
+  <script>
+    // Accéder aux éléments
+    let titre = document.getElementById("monTitre");
+    let bouton = document.getElementById("monBouton");
+
+    // Modifier le titre
+    titre.textContent = "Bienvenue sur mon site !";
+
+    // Ajouter un événement de clic sur le bouton
+    bouton.addEventListener("click", function() {
+      titre.textContent = "Tu as cliqué sur le bouton!";
+      document.body.style.backgroundColor = "pink";
+    });
+  </script>
+</body>
+</html>
