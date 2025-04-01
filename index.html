@@ -93,6 +93,17 @@
       conteneur.appendChild(nouveauParagraphe);  // Ajoute le paragraphe au conteneur
     });
   </script>
+  <div id="conteneur">
+    <p id="paragraphe1">Cliquez ici pour supprimer ce paragraphe.</p>
+  </div>
+  
+  <script>
+    let paragraphe = document.getElementById("paragraphe1");
+  
+    paragraphe.addEventListener("click", function() {
+      paragraphe.remove();  // Supprime le paragraphe lorsque l'on clique dessus
+    });
+  </script>
   
 </body>
 </html>
