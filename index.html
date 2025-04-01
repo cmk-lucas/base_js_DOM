@@ -40,6 +40,23 @@
       form.reset();  // Réinitialise tous les champs du formulaire
     });
   </script>
+
+<div id="monDiv" style="width: 100px; height: 100px; background-color: gray;">
+    Survole-moi !
+  </div>
+  
+  <script>
+    let div = document.getElementById("monDiv");
+  
+    div.addEventListener("mouseover", function() {
+      div.style.backgroundColor = "yellow";  // Change la couleur en jaune lorsque la souris passe
+    });
+  
+    div.addEventListener("mouseout", function() {
+      div.style.backgroundColor = "gray";  // Reverti la couleur à grise lorsque la souris quitte
+    });
+  </script>
+  
   
 </body>
 </html>
