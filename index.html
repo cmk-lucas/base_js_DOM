@@ -70,6 +70,16 @@
     });
   </script>
   
+  <a href="https://www.example.com" id="monLien">Clique ici pour aller à Example</a>
 
+  <script>
+    let lien = document.getElementById("monLien");
+  
+    lien.addEventListener("click", function(event) {
+      event.preventDefault();  // Empêche le lien de rediriger
+      alert("Le lien ne redirige pas, c'est un test !");
+    });
+  </script>
+  
 </body>
 </html>
