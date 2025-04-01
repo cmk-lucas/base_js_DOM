@@ -80,6 +80,19 @@
       alert("Le lien ne redirige pas, c'est un test !");
     });
   </script>
+  <button id="ajouterParagraphe">Ajouter un paragraphe</button>
+  <div id="conteneur"></div>
+  
+  <script>
+    let bouton1 = document.getElementById("ajouterParagraphe");
+    let conteneur = document.getElementById("conteneur");
+  
+    bouton1.addEventListener("click", function() {
+      let nouveauParagraphe = document.createElement("p");  // Crée un nouveau paragraphe
+      nouveauParagraphe.textContent = "Voici un nouveau paragraphe ajouté!";
+      conteneur.appendChild(nouveauParagraphe);  // Ajoute le paragraphe au conteneur
+    });
+  </script>
   
 </body>
 </html>
